@@ -1,0 +1,14 @@
+# 1. Ignorar la carpeta del entorno virtual (muy importante)
+env/
+
+# 2. Ignorar configuraciones de editor (VS Code)
+.vscode/
+
+# 3. Ignorar archivos caché de Python (se crean al ejecutar)
+__pycache__/
+
+# 4. Ignorar TODOS los archivos de Python por defecto
+*.py
+
+# 5. ¡EXCEPCIÓN! Forzar a git a SÍ incluir app.py
+!app.py
