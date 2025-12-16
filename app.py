@@ -40,8 +40,8 @@ def predict_image(image_pil):
         return None
 
 # --- 3. INTERFAZ DE STREAMLIT (La misma de antes) ---
-st.set_page_config(page_title="Clasificador de Tueste (Azure)", layout="wide")
-st.title("🤖 Clasificador de Tueste de Café (con Azure Custom Vision)")
+st.set_page_config(page_title="Clasificador de Tueste (Coffe)", layout="wide")
+st.title("🤖 Clasificador de Tueste de Café 👁️")
 st.write("Sube una foto o usa tu cámara para clasificar el nivel de tueste.")
 
 # Cargar la imagen
@@ -68,7 +68,7 @@ if image_pil is not None:
         st.image(image_pil, caption="Imagen de entrada", use_container_width=True)
     
     # ¡Llamamos a nuestra nueva función de API!
-    with st.spinner('Enviando a Azure para clasificar...'):
+    with st.spinner('Enviando para clasificar...'):
         prediction_data = predict_image(image_pil)
     
     with col2:
